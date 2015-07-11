@@ -21,6 +21,9 @@ https://www.youtube.com/watch?v=dh7GMmRsQvA
 $arrYoutubeId = explode("\n", trim($strYoutubeDownloadUrl));
 
 foreach ($arrYoutubeId as $key => $value) {
+    	/* 
+    	not needed
+    	and anyway not working anymore
     	
     	// Get Youtube ID
 	preg_match("/^(?:http(?:s)?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:(?:watch)?\?(?:.*&)?v(?:i)?=|(?:embed|v|vi|user)\/))([^\?&\"'>]+)/", $value, $matches);
@@ -33,6 +36,8 @@ foreach ($arrYoutubeId as $key => $value) {
 
 	$strTitleName = iconv("UTF-8", "TIS-620", preg_replace("/[\"'\/:|\\\?\$\*%\-\+ ]/", "-", $json['entry']['title']['$t']));
 
+	*/
+	
 	// Get Mp4 Link
 	$strMp4LinkTmp = "";
 
